@@ -5,7 +5,7 @@ html, body {
 	font-family: Menlo, monospace; 
 	font-size: 16px;
 	line-height: 1.5;
-	color: #F0EAD6;
+	color: #E6EEF7;
 	background-color: #6F7378;
 }
 
@@ -36,7 +36,7 @@ nav li {
 
 nav a {
 	display: block;
-	color: #F0EAD6;
+	color: #E6EEF7;
 	text-decoration: none;
 	padding: 10px;
 	transition: background-color 0.3s ease;
