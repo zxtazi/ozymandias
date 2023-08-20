@@ -6,7 +6,7 @@ html, body {
 	font-size: 16px;
 	line-height: 1.5;
 	color: #F0EAD6;
-	background-color: #2A3B47; /* Set the background color to dark green */
+	background-color: #CFCFC4; /* Set the background color to matte grey */
 }
 
 /* Header styles */
@@ -18,7 +18,7 @@ h1 {
 	margin: 0;
 	font-size: 48px;
 	line-height: 1.2;
-	color: #2A3B47;
+	color: #CFCFC4;
 	background-color: #ffffff;
 }
 
