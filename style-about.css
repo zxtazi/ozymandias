@@ -5,8 +5,8 @@ html, body {
 	font-family: Menlo, monospace; 
 	font-size: 16px;
 	line-height: 1.5;
-	color: #E6EEF7;
-	background-color: #6F7378;
+	color: #F0EAD6;
+	background-color: #2C4335;
 }
 
 /* Header styles */
@@ -19,8 +19,8 @@ h1 {
 	margin: 0;
 	font-size: 32px;
 	line-height: 1.2;
-	color: #6F7378;
-	background-color: #000000;
+	color: #2C4335;
+	background-color: #ffffff;
 }
 
 nav ul {
@@ -36,7 +36,7 @@ nav li {
 
 nav a {
 	display: block;
-	color: #E6EEF7;
+	color: #F0EAD6;
 	text-decoration: none;
 	padding: 10px;
 	transition: background-color 0.3s ease;
