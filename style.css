@@ -5,8 +5,8 @@ html, body {
 	font-family: Menlo, monospace; 
 	font-size: 16px;
 	line-height: 1.5;
-	color: #F0EAD6;
-	background-color: #2A3B47; /* Set the background color to dark green */
+	color: #060606;
+	background-color: #f5eee1; /* Set the background color to dark green */
 }
 
 /* Header styles */
@@ -18,7 +18,7 @@ h1 {
 	margin: 0;
 	font-size: 48px;
 	line-height: 1.2;
-	color: #2A3B47;
+	color: #f5eee1;
 	background-color: #ffffff;
 }
 
