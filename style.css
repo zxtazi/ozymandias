@@ -6,7 +6,7 @@ html, body {
 	font-size: 16px;
 	line-height: 1.5;
 	color: #060606;
-	background-color: #f5eee1; /* Set the background color to dark green */
+	background-color: #f5eee1; /* Set the background color to light beige */
 }
 
 /* Header styles */
@@ -19,7 +19,7 @@ h1 {
 	font-size: 48px;
 	line-height: 1.2;
 	color: #f5eee1;
-	background-color: #ffffff;
+	background-color: #080707; /* set banner color */
 }
 
 nav ul {
@@ -29,13 +29,13 @@ nav ul {
 }
 
 nav li {
-	display: inline-block;
+	display: inline-block; /* set navigation menu style */
 	margin-right: 20px;
 }
 
 nav a {
 	display: block;
-	color: #F0EAD6;
+	color: #f5eee1;
 	text-decoration: none;
 	padding: 10px;
 	transition: background-color 0.3s ease;

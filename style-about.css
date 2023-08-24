@@ -5,21 +5,21 @@ html, body {
 	font-family: Menlo, monospace; 
 	font-size: 16px;
 	line-height: 1.5;
-	color: #F0EAD6;
-	background-color: #2C4335;
+	color: #0e0e0c;
+	background-color: #f5eee1;
 }
 
 /* Header styles */
 header {
 	padding: 20px 20px 0px 20px;
-	color: #F0EAD6;
+	color: #0a0a09;
 }
 
 h1 {
 	margin: 0;
 	font-size: 32px;
 	line-height: 1.2;
-	color: #f5eee1;
+	color: #0f0e0e;
 	background-color: #ffffff;
 }
 
@@ -36,7 +36,7 @@ nav li {
 
 nav a {
 	display: block;
-	color: #F0EAD6;
+	color: #0d0d0b;
 	text-decoration: none;
 	padding: 10px;
 	transition: background-color 0.3s ease;
