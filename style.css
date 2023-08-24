@@ -35,14 +35,14 @@ nav li {
 
 nav a {
 	display: block;
-	color: #f5eee1;
+	color: #0b0b0a;
 	text-decoration: none;
 	padding: 10px;
 	transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-	background-color: #333;
+	background-color: #b7b6b6;
 }
 
 /* Main styles */
