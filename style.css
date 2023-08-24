@@ -29,7 +29,7 @@ nav ul {
 }
 
 nav li {
-	display: block;
+	display: inline-block;
 	margin-right: 20px;
 }
 
