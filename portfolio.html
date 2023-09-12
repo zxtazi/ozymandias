@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ozymandias</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style-portfolio.css">
+</head>
+<body>
+	<header>
+		<h1>0.3</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">home</a></li>
+				<li><a href="about.html">about</a></li>
+                <li><a href="#">art</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<article>
+			<p>"If we had stayed in Zurich, you'd still be a surgeon."</p>
+			<p>"And you'd be a photographer."</p>
+			<h2>ars gratis artis</h2>
+			<iframe src="https://docs.google.com/document/d/e/2PACX-1vQX78ye_PZvjwQw7G6dPo-BYl8DI3bf9o0M-q9G2S8Ulr4yg3MN8IeqPhyZiVO3Pu1-KIP8Cb_kPt3g/pub?embedded=true"></iframe>
+		</article>
+	</main>
+	<script>
+		var iframes = document.getElementsByTagName("iframe");
+		for (let i = 0; i < iframes.length; i++) {
+			var url = iframes[i].getAttribute("src");
+			if (url.startsWith("https://docs.google.com/document/d/")) {
+				let d = document.createElement('div');
+				d.classList.add("embedded-doc");
+				var xhr = new XMLHttpRequest();
+				xhr.open('GET', url, true);
+				xhr.onload = function () {
+					d.innerHTML = xhr.responseText;
+
+					let scriptChildren = d.querySelectorAll('script');
+					scriptChildren.forEach(script => {
+						script.parentNode.removeChild(script);
+					});
+					let styleChildren = d.querySelectorAll('style');
+					styleChildren.forEach(style => {
+						const cssString = style.innerText;
+						const modifiedCss = cssString.replace(/\}/g, '}.embedded-doc ');
+						const lineSpacingFix = modifiedCss.replace(/\line-height/g, 'foo');
+						style.innerHTML = lineSpacingFix;
+					});
+					let subElements = d.querySelectorAll('*');
+					subElements.forEach(element => {
+						element.style.width = '100%';
+						element.style.maxWidth = '85%';
+						element.style.removeProperty('height');
+						if (element.tagName.toLowerCase() !== 'li') {
+							element.style.overflow = 'hidden';
+						}
+						if (element.tagName.toLowerCase() === 'img') {  // Add this condition
+							element.style.maxWidth = '70%';
+							element.style.height = 'auto';
+						}
+					});
+					iframes[i].parentElement.replaceChild(d, iframes[i]);
+				};
+				xhr.send();
+			}
+		}
+	</script>
+</body>
+</html>
