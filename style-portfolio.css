@@ -72,3 +72,22 @@ img {
 	max-width: 90%;
 	height: auto;
   }
+/* Image Grid Styles */
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px; /* Add some negative margin to create spacing between grid items */
+}
+
+.grid-item {
+    flex: 0 0 calc(33.33% - 20px); /* Three images per row with some margin */
+    margin: 10px;
+    overflow: hidden; /* Ensure images don't overflow the grid items */
+}
+
+/* Adjust the styling for grid images as needed */
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
